@@ -34,6 +34,9 @@ public class Spiller {
 
     public void opdaterBalance(int p) {
         this.balance += p;
+        if(balance < 0){
+            balance = 0;
+        }
     }
 }
 
