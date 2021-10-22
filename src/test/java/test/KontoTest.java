@@ -1,18 +1,21 @@
 package test;
-import static org.junit.Assert.assertTrue;
+
+import game.domain.Konto;
 import game.domain.Spiller;
 import org.junit.jupiter.api.Test;
 
-public class BalanceTest {
+import static org.junit.Assert.assertTrue;
+
+public class KontoTest {
     private int TESTITTERATIONER = 100000;
     @Test
     void balance_over_0(){
-        Spiller spiller = new Spiller();
+        Konto konto = new Konto(1000);
         for (int i = 0; i < TESTITTERATIONER; i++){
             int påvirkning = (int) (Math.random() * 700);
             påvirkning = (Math.random() > 0.5) ? -påvirkning : påvirkning;
-            spiller.opdaterBalance(påvirkning);
-            assertTrue(spiller.getBalance() >= 0);
+            konto.påvirkBalance(påvirkning);
+            assertTrue(konto.getSaldo() >= 0);
         }
     }
 }
