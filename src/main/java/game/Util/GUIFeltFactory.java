@@ -9,15 +9,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class GUIFeltFactory {
-    private Scanner input;
+public class GUIFeltFactory extends FeltFactory{
+
     public GUIFeltFactory() throws FileNotFoundException {
-        resetInput();
+        super();
     }
 
-    private void resetInput() throws FileNotFoundException {
-        input = FeltConfigLoader.getInstance().getFeltInput();
-    }
     public HashMap<String,String> lavBeskeder() throws FileNotFoundException {
         resetInput();
         HashMap<String,String> beskeder = new HashMap<>();
@@ -39,9 +36,6 @@ public class GUIFeltFactory {
             input.next();
             input.next();
         }
-        GUI_Field[] f2 = new GUI_Field[felter.size()];
-        for(int i = 0; i < f2.length; i++)
-            f2[i] = felter.get(i);
-        return f2;
+        return felter.toArray(new GUI_Field[0]);
     }
 }
