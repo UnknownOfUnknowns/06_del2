@@ -1,6 +1,8 @@
 package game.GUI;
 
+import game.Util.DomainFeltFactory;
 import game.Util.GUIFeltFactory;
+import game.domain.Felt;
 import gui_fields.*;
 import gui_main.GUI;
 import java.io.FileNotFoundException;

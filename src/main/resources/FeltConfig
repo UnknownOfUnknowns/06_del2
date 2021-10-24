@@ -1,11 +1,11 @@
-Tower;250;
-Crater;-100;
-Palace gates;100;
-Cold Desert;-20;
-Walled city;180;
-Monastery;0;
-Black cave;-70;
-Huts in the mountain;60;
-The Werewall;-80;
-The pit;-50;
-Goldmine; 650
+Tower;250;false;--;
+Crater;-100;false;--;
+Palace gates;100;false;--;
+Cold Desert;-20;false;--;
+Walled city;180;false;--;
+Monastery;0;false;--;
+Black cave;-70;false;--;
+Huts in the mountain;60;false;--;
+The Werewall;-80;true;--;
+The pit;-50;false;--;
+Goldmine;650;false;--;
