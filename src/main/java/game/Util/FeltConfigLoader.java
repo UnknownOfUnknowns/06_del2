@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class FeltConfigLoader {
     private static FeltConfigLoader instance;
-    private final Scanner feltInput;
+    private Scanner feltInput;
+    private static String fil = "src/main/resources/FeltConfig";
 
     private FeltConfigLoader() throws FileNotFoundException {
-        String fil = "src/main/resources/FeltConfig";
         feltInput = new Scanner(new File(fil));
         feltInput.useDelimiter(";");
     }
@@ -20,7 +20,10 @@ public class FeltConfigLoader {
         return instance;
     }
 
-    public Scanner getFeltInput() {
+    public Scanner getFeltInput() throws FileNotFoundException {
+        feltInput.close();
+        feltInput = new Scanner(new File(fil));
+        feltInput.useDelimiter(";");
         return feltInput;
     }
 }
