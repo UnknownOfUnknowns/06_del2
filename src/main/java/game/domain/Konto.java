@@ -7,7 +7,6 @@ public class Konto {
     }
 
     public int getSaldo() {
-        påvirkBalance(100);
         return saldo;
     }
 
