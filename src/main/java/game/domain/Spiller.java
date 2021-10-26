@@ -1,13 +1,13 @@
 package game.domain;
 
 public class Spiller {
-    private int balance;
+    private Konto konto;
     private Terning t1;
     private Terning t2;
     private static final int TERNING_SIDER = 6;
 
     public Spiller(){
-        balance = 1000;
+        konto = new Konto(1000);
         t1 = new Terning(TERNING_SIDER);
         t2 = new Terning(TERNING_SIDER);
     }
@@ -18,25 +18,18 @@ public class Spiller {
         int sum = t1.getVærdi() + t2.getVærdi();
         return sum;
     }
-    public int getBalance() {
-        return balance;
-    }
 
     private int[] getTerningØjne(){
         return new int[]{t1.getVærdi(), t2.getVærdi()};
     }
 
-    public int[] getStatus(){
-        int[] øjne = getTerningØjne();
-        return new int[]{øjne[0], øjne[1], getBalance()};
+    public Konto getKonto() {
+        return konto;
     }
 
-
-    public void opdaterBalance(int p) {
-        this.balance += p;
-        if(balance < 0){
-            balance = 0;
-        }
+    public int[] getStatus(){
+        int[] øjne = getTerningØjne();
+        return new int[]{øjne[0], øjne[1], konto.getSaldo()};
     }
 }
 

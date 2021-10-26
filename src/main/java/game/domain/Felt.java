@@ -3,13 +3,22 @@ package game.domain;
 public class Felt {
     private int likviditetsvikrning;
     private String navn;
-
-    public Felt(int likviditetsvirkning, String navn){
+    private boolean giverEkstraTur;
+    public Felt(int likviditetsvirkning, String navn, boolean giverEkstraTur){
         this.likviditetsvikrning = likviditetsvirkning;
         this.navn = navn;
+        this.giverEkstraTur = giverEkstraTur;
     }
 
     public int getLikviditetsvikrning() {
         return likviditetsvikrning;
+    }
+
+    public String getNavn() {
+        return navn;
+    }
+
+    public boolean giverEkstraTur() {
+        return giverEkstraTur;
     }
 }
