@@ -17,8 +17,8 @@ public class Spil {
         spillebræt = new Bræt();
     }
     private boolean har_vinder(){
-        vinder = s1.getKonto().getSaldo() >= 4000 ? s1 : null;
-        vinder = s2.getKonto().getSaldo() >= 4000 ? s2 : null;
+        vinder = s1.getKonto().getSaldo() >= 3000 ? s1 : null;
+        vinder = s2.getKonto().getSaldo() >= 3000 ? s2 : null;
         return vinder != null;
     }
     public void tag_tur(Spiller s) throws Exception {
