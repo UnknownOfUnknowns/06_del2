@@ -31,5 +31,14 @@ public class Spiller {
         int[] øjne = getTerningØjne();
         return new int[]{øjne[0], øjne[1], konto.getSaldo()};
     }
+
+    @Override
+    public String toString() {
+        return "Spiller{" +
+                "Konto=" + konto +
+                ", Terning 1=" + t1 +
+                ", Terning 2=" + t2 +
+                '}';
+    }
 }
 

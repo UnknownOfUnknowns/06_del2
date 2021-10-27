@@ -21,4 +21,13 @@ public class Felt {
     public boolean giverEkstraTur() {
         return giverEkstraTur;
     }
+
+    @Override
+    public String toString() {
+        return "Felt{" +
+                "Likviditetsvikrning = " + likviditetsvikrning +
+                "Navn = " + navn +
+                "EkstraTur = " + giverEkstraTur +
+                '}';
+    }
 }

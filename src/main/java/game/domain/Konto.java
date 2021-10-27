@@ -15,4 +15,11 @@ public class Konto {
         if(saldo < 0) saldo = 0;
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Konto{" +
+                "Saldo=" + saldo +
+                '}';
+    }
 }
