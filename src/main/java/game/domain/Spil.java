@@ -1,5 +1,7 @@
 package game.domain;
 
+import game.Util.SpilData;
+
 import java.io.FileNotFoundException;
 
 public class Spil {
@@ -16,9 +18,15 @@ public class Spil {
         vinder = null;
         tur_spiller = s1;
     }
+
     public boolean har_vinder(){
-        vinder = s1.getKonto().getSaldo() >= 3000 ? s1 : null;
-        vinder = s2.getKonto().getSaldo() >= 3000 ? s2 : null;
+        if(s1.getKonto().getSaldo() >= SpilData.getInstance().getVINDERBALANCE()){
+            vinder = s1;
+        }else if(s2.getKonto().getSaldo() >= SpilData.getInstance().getVINDERBALANCE()){
+            vinder = s2;
+        }else{
+            vinder = null;
+        }
         return vinder != null;
     }
     public void tag_tur() {
@@ -27,7 +35,7 @@ public class Spil {
         tur_spiller.getKonto().påvirkBalance(virkning);
         Felt felt = spillebræt.getFelt(øjne);
         tur_spiller.setFelt(felt);
-        if (har_vinder() || felt.giverEkstraTur())
+        if (felt.giverEkstraTur())
             return;
         tur_spiller = tur_spiller == s1 ? s2 : s1;
 
@@ -44,4 +52,9 @@ public class Spil {
     public Spiller getTur_spiller() {
         return tur_spiller;
     }
+
+    public Spiller getVinder() {
+        return vinder;
+    }
 }
+
