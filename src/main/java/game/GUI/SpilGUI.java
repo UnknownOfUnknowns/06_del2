@@ -62,7 +62,8 @@ public class SpilGUI {
             flytBiler();
             setBil(p1, spil.getS1().getFelt().getNavn());
             setBil(p2, spil.getS2().getFelt().getNavn());
-            if(spil.getTur_spiller() == spil.getS1()){
+            if(spil.getTur_spiller() == spil.getS1() && !(spil.getS1().getFelt().getNavn().equals("The Werewall")) ||
+                    spil.getS2().getFelt().getNavn().equals("The Werewall")){
                 int[] status = spil.getS2().getStatus();
                 gui.setDice(status[0], status[1]);
                 p2.setBalance(status[2]);
