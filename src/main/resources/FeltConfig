@@ -1,1 +1,11 @@
-Tower;250;false;--;Crater;-100;false;--;Palace gates;100;false;--;Cold Desert;-20;false;--;Walled city;180;false;--;Monastery;0;false;--;Black cave;-70;false;--;Huts in the mountain;60;false;--;The Werewall;-80;true;--;The pit;-50;false;--;Goldmine;650;false;--;
+Tower;250;false;Yes! Du er landet på Tower og modtager 250 point;
+Crater;-100;false;Øv! Du er landet på Crater og mister 100 point;
+Palace gates;100;false;Yes! Du er landet på Palace gates og modtager 100 poin;
+Cold Desert;-20;false;Øv! Du er landet på Cold Desert og mister 20 point;
+Walled city;180;false;Yes! Du er landet på Walled city og modtager 180 point;
+Monastery;0;false;Øv! Du er landet på Monastery og modtager 0 point;
+Black cave;-70;false;Øv! Du er landet på Black cave og mister 70 point;
+Huts in the mountain;60;false;Yes! Du er landet på Huts in the mountain og modtager 60 point;
+The Werewall;-80;true;Øv! Du er landet på The Werewall og mister 80 point. Du får et ekstra slag;
+The pit;-50;false;Øv! Du er landet på The pit og mister 50 point;
+Goldmine;650;false;Jackpot! Du er landet på Goldmine og modtager 250 point;
