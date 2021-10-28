@@ -1,16 +1,18 @@
 package game.domain;
 
+import game.Util.SpilData;
+
 public class Spiller {
     private Konto konto;
     private Terning t1;
     private Terning t2;
-    private static final int TERNING_SIDER = 6;
     private Felt felt;
 
     public Spiller(Felt f){
         konto = new Konto(1000);
-        t1 = new Terning(TERNING_SIDER);
-        t2 = new Terning(TERNING_SIDER);
+        int terningsider = SpilData.getInstance().getTERNINGSIDER();
+        t1 = new Terning(terningsider);
+        t2 = new Terning(terningsider);
         felt = f;
     }
 
