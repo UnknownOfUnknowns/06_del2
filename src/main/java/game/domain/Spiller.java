@@ -9,7 +9,7 @@ public class Spiller {
     private Felt felt;
 
     public Spiller(Felt f){
-        konto = new Konto(1000);
+        konto = new Konto(SpilData.getInstance().getSTARTBALANCE());
         int terningsider = SpilData.getInstance().getTERNINGSIDER();
         t1 = new Terning(terningsider);
         t2 = new Terning(terningsider);
@@ -51,9 +51,10 @@ public class Spiller {
     @Override
     public String toString() {
         return "Spiller{" +
-                "Konto=" + konto +
-                ", Terning 1=" + t1 +
-                ", Terning 2=" + t2 +
+                "konto=" + konto +
+                ", t1=" + t1 +
+                ", t2=" + t2 +
+                ", felt=" + felt +
                 '}';
     }
 }

@@ -1,11 +1,1 @@
-Tower;250;false;Yes! Du er landet på Tower og modtager 250 point;
-Crater;-100;false;Øv! Du er landet på Crater og mister 100 point;
-Palace gates;100;false;Yes! Du er landet på Palace gates og modtager 100 poin;
-Cold Desert;-20;false;Øv! Du er landet på Cold Desert og mister 20 point;
-Walled city;180;false;Yes! Du er landet på Walled city og modtager 180 point;
-Monastery;0;false;Øv! Du er landet på Monastery og modtager 0 point;
-Black cave;-70;false;Øv! Du er landet på Black cave og mister 70 point;
-Huts in the mountain;60;false;Yes! Du er landet på Huts in the mountain og modtager 60 point;
-The Werewall;-80;true;Øv! Du er landet på The Werewall og mister 80 point. Du får et ekstra slag;
-The pit;-50;false;Øv! Du er landet på The pit og mister 50 point;
-Goldmine;650;false;Jackpot! Du er landet på Goldmine og modtager 250 point;
+Tower;250;false;Du har nu nået toppen af tårnet;Crater;-100;false;Der var langt ned!!!;Palace gates;100;false;Kan du høre fanfaren? Det er paladset!!;Cold Desert;-20;false;Din tå er frosset af;Walled city;180;false;RAM MUREN!!!;Monastery;0;false;Pas på klokkeværket;Black cave;-70;false;Er du blind eller hvad?;Huts in the mountain;60;false;Hobbitterne kommer!!;The Werewall;-80;true;SLÅ IGEN!! (ekstra slag).;The pit;-50;false;Brækket begge ben! Tag en smøg;Goldmine;650;false;Lommen fuld af guld og en whisky!;
